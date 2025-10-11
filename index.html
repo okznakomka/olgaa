@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Знакомства рядом — быстрый тест</title>
+<meta name="description" content="Пройди быстрый тест и найди пару. Только 18+.">
+<link rel="icon" href="images/maria45.jpg">
+<style>
+:root { --accent:#ff4d6d; --bg:#fff; --muted:#666; --card:#ffffff; }
+* { box-sizing:border-box; font-family:Inter, Roboto, Arial, sans-serif }
+body { margin:0; background:linear-gradient(180deg,#fff,#ffeef2); color:#111 }
+.container { max-width:720px; margin:0 auto; padding:18px }
+.header { display:flex; gap:12px; align-items:center; margin-top:18px }
+.logo { width:64px; height:64px; border-radius:12px; overflow:hidden; flex:0 0 64px }
+.logo img { width:100%; height:100%; object-fit:cover }
+.h1 { font-size:20px; font-weight:700 }
+.card { background:var(--card); padding:16px; border-radius:14px; box-shadow:0 8px 24px rgba(18,18,18,0.06); margin-top:14px }
+.btn { display:inline-block; padding:12px 18px; border-radius:10px; background:var(--accent); color:#fff; text-decoration:none; font-weight:700; width:100%; margin-top:8px }
+.small { font-size:13px; color:var(--muted) }
+.grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:12px }
+.avatar { border-radius:10px; overflow:hidden; background:#fff; text-align:center; padding:6px; }
+.avatar img { width:100%; border-radius:10px; transition:transform .2s }
+.avatar img:hover { transform:scale(1.05) }
+.avatar p { margin:6px 0 0; font-size:14px; font-weight:600; }
+.footer { margin:18px 0; text-align:center; color:var(--muted); font-size:13px }
+.age-gate { position:fixed; inset:0; background:rgba(0,0,0,0.6); display:flex; align-items:center; justify-content:center; padding:20px }
+.age-gate .box { background:#fff; padding:18px; border-radius:12px; max-width:420px; text-align:center }
+.cover { margin-top:16px; border-radius:14px; overflow:hidden }
+.cover img { width:100%; border-radius:14px }
+</style>
+</head>
+<body>
+<div id="ageGate" class="age-gate" aria-hidden="false">
+  <div class="box">
+    <h2>Вход только 18+</h2>
+    <p class="small">Нажмите «Войти», если вам 18 лет или больше.</p>
+    <div style="margin-top:12px">
+      <button id="enterBtn" class="btn">Войти</button>
+      <a href="#" id="leaveBtn" style="margin-left:12px" class="small">Покинуть</a>
+    </div>
+  </div>
+</div>
+
+<div class="container" id="page" style="opacity:0.01">
+  <!-- Обложка -->
+  <div class="cover">
+    <img src="images/cover.jpg" alt="Психологический тест">
+  </div>
+
+  <div class="header">
+    <div class="logo"><img src="images/maria45.jpg" alt="logo"></div>
+    <div>
+      <div class="h1">Тест: выбери анкету</div>
+      <div class="small">Выбор девушки рядом</div>
+    </div>
+  </div>
+
+  <div class="card" role="main">
+    <h3>Выбери анкету</h3>
+    <div class="grid">
+      <a href="https://chmpmrm.flirt-hotlady.com/wdk2cxh" target="_blank" rel="noopener" class="avatar">
+        <img src="images/maria45.jpg" alt="Мария, 45">
+        <p>Мария, 45</p>
+      </a>
+      <a href="https://chmpmrm.flirt-hotlady.com/wdk2cxh" target="_blank" rel="noopener" class="avatar">
+        <img src="images/anna40.jpg" alt="Анна, 40">
+        <p>Анна, 40</p>
+      </a>
+      <a href="https://chmpmrm.flirt-hotlady.com/wdk2cxh" target="_blank" rel="noopener" class="avatar">
+        <img src="images/galina55.jpg" alt="Галина, 55">
+        <p>Галина, 55</p>
+      </a>
+      <a href="https://chmpmrm.flirt-hotlady.com/wdk2cxh" target="_blank" rel="noopener" class="avatar">
+        <img src="images/olga38.jpg" alt="Ольга, 38">
+        <p>Ольга, 38</p>
+      </a>
+    </div>
+  </div>
+
+  <div class="footer small">© 2025 — Только для взрослых.</div>
+</div>
+
+<script>
+document.getElementById('enterBtn').addEventListener('click', ()=>{
+  document.getElementById('ageGate').style.display='none';
+  document.getElementById('page').style.opacity=1;
+});
+document.getElementById('leaveBtn').addEventListener('click', ()=>{ window.location.href='https://google.com'; });
+</script>
+</body>
+</html>
