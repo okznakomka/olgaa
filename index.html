@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Секретные одноклассницы 🤫</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Шаг 1: Проверка совместимости -->
+    <div id="step1" class="step active">
+        <div class="container">
+            <div class="header-badge">
+                <span class="pulse-dot"></span>
+                <span class="online-text">Сейчас онлайн: <strong id="onlineCount">2847</strong> одноклассниц</span>
+            </div>
+            
+            <h1 class="main-title">Проверка совместимости с секретными одноклассницами</h1>
+            <p class="subtitle">Ответь на 3 простых вопроса, чтобы найти идеальную пару из прошлого!</p>
+            
+            <div class="compatibility-check">
+                <div class="check-item">
+                    <span class="check-icon">❤️</span>
+                    <span>Анализ предпочтений</span>
+                </div>
+                <div class="check-item">
+                    <span class="check-icon">🧠</span>
+                    <span>Психологический портрет</span>
+                </div>
+                <div class="check-item">
+                    <span class="check-icon">✨</span>
+                    <span>Подбор идеальной пары</span>
+                </div>
+            </div>
+
+            <div class="urgency-timer">
+                <div class="timer-icon">⏰</div>
+                <div class="timer-text">
+                    <strong>Осталось мест:</strong> <span id="spotsLeft">7</span> из 50
+                </div>
+            </div>
+
+            <button class="btn-primary" onclick="nextStep(2)">
+                Начать проверку
+                <span class="btn-arrow">→</span>
+            </button>
+
+            <div class="trust-badges">
+                <div class="badge-item">
+                    <span class="badge-icon">✓</span>
+                    <span>100% анонимно</span>
+                </div>
+                <div class="badge-item">
+                    <span class="badge-icon">🔒</span>
+                    <span>Безопасно</span>
+                </div>
+                <div class="badge-item">
+                    <span class="badge-icon">⚡</span>
+                    <span>Быстрая проверка</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Шаг 2: Вопрос о цели -->
+    <div id="step2" class="step">
+        <div class="container">
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 25%"></div>
+            </div>
+            <span class="step-counter">Вопрос 1 из 3</span>
+            
+            <h2 class="question-title">Что ты ищешь в однокласснице?</h2>
+            
+            <div class="options-grid">
+                <div class="option-card" onclick="selectOption(this, 3)">
+                    <div class="option-emoji">💬</div>
+                    <div class="option-text">Приятное общение</div>
+                </div>
+                <div class="option-card" onclick="selectOption(this, 3)">
+                    <div class="option-emoji">🔥</div>
+                    <div class="option-text">Встречи без обязательств</div>
+                </div>
+                <div class="option-card" onclick="selectOption(this, 3)">
+                    <div class="option-emoji">❤️</div>
+                    <div class="option-text">Серьезные отношения</div>
+                </div>
+                <div class="option-card" onclick="selectOption(this, 3)">
+                    <div class="option-emoji">🎯</div>
+                    <div class="option-text">Посмотрю, что получится</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Шаг 3: Вопрос о возрасте -->
+    <div id="step3" class="step">
+        <div class="container">
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 50%"></div>
+            </div>
+            <span class="step-counter">Вопрос 2 из 3</span>
+            
+            <h2 class="question-title">Какой возраст одноклассницы тебя привлекает?</h2>
+            
+            <div class="options-grid">
+                <div class="option-card" onclick="selectOption(this, 4)">
+                    <div class="option-emoji">👩</div>
+                    <div class="option-text">25-35 лет</div>
+                </div>
+                <div class="option-card" onclick="selectOption(this, 4)">
+                    <div class="option-emoji">👱‍♀️</div>
+                    <div class="option-text">36-45 лет</div>
+                </div>
+                <div class="option-card" onclick="selectOption(this, 4)">
+                    <div class="option-emoji">👵</div>
+                    <div class="option-text">46-55 лет</div>
+                </div>
+                <div class="option-card" onclick="selectOption(this, 4)">
+                    <div class="option-emoji">👑</div>
+                    <div class="option-text">56+ лет</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Шаг 4: Вопрос о готовности -->
+    <div id="step4" class="step">
+        <div class="container">
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 100%"></div>
+            </div>
+            <span class="step-counter">Последний вопрос</span>
+            
+            <h2 class="question-title">Готов встретиться с одноклассницей сегодня?</h2>
+            
+            <div class="options-grid">
+                <div class="option-card" onclick="selectOption(this, 5)">
+                    <div class="option-emoji">✅</div>
+                    <div class="option-text">Да, готов!</div>
+                </div>
+                <div class="option-card" onclick="selectOption(this, 5)">
+                    <div class="option-emoji">📅</div>
+                    <div class="option-text">В ближайшие дни</div>
+                </div>
+                <div class="option-card" onclick="selectOption(this, 5)">
+                    <div class="option-emoji">🤔</div>
+                    <div class="option-text">Пока не уверен</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Шаг 5: Результаты с анкетами -->
+    <div id="step5" class="step">
+        <div class="container">
+            <div class="success-badge">
+                <span class="success-icon">🎉</span>
+                <h2 class="success-title">Отлично! Мы подобрали для тебя секретных одноклассниц</h2>
+                <p class="success-subtitle">Они ждут твоего сообщения прямо сейчас</p>
+            </div>
+
+            <div class="matched-count">
+                <div class="count-circle">
+                    <span class="count-number" id="matchCount">0</span>
+                    <span class="count-label">совпадений</span>
+                </div>
+            </div>
+
+            <div class="profiles-list">
+                <div class="profile-item">
+                    <div class="profile-photo">
+                        <img src="images/girl1.jpg" alt="Анкета">
+                        <span class="online-indicator"></span>
+                    </div>
+                    <div class="profile-info">
+                        <h3 class="profile-name">Елена, 35</h3>
+                        <p class="profile-location">📍 0.5 км от тебя</p>
+                        <p class="profile-status-text">Онлайн • Ищет встречи</p>
+                    </div>
+                    <a href="https://chmpmrm.flirt-hotlady.com/wdk2cxh" class="btn-chat" target="_blank">
+                        Написать 💬
+                    </a>
+                </div>
+
+                <div class="profile-item">
+                    <div class="profile-photo">
+                        <img src="images/girl2.jpg" alt="Анкета">
+                        <span class="online-indicator"></span>
+                    </div>
+                    <div class="profile-info">
+                        <h3 class="profile-name">Ольга, 46</h3>
+                        <p class="profile-location">📍 1.1 км от тебя</p>
+                        <p class="profile-status-text">Онлайн • Хочет познакомиться</p>
+                    </div>
+                    <a href="https://chmpmrm.flirt-hotlady.com/wdk2cxh" class="btn-chat" target="_blank">
+                        Написать 💬
+                    </a>
+                </div>
+
+                <div class="profile-item">
+                    <div class="profile-photo">
+                        <img src="images/girl3.jpg" alt="Анкета">
+                        <span class="online-indicator"></span>
+                    </div>
+                    <div class="profile-info">
+                        <h3 class="profile-name">Ирина, 57</h3>
+                        <p class="profile-location">📍 1.8 км от тебя</p>
+                        <p class="profile-status-text">Онлайн • Открыта к общению</p>
+                    </div>
+                    <a href="https://chmpmrm.flirt-hotlady.com/wdk2cxh" class="btn-chat" target="_blank">
+                        Написать 💬
+                    </a>
+                </div>
+
+                <div class="profile-item">
+                    <div class="profile-photo">
+                        <img src="images/girl4.jpg" alt="Анкета">
+                        <span class="online-indicator"></span>
+                    </div>
+                    <div class="profile-info">
+                        <h3 class="profile-name">Светлана, 49</h3>
+                        <p class="profile-location">📍 2.3 км от тебя</p>
+                        <p class="profile-status-text">Онлайн • Ищет флирт</p>
+                    </div>
+                    <a href="https://chmpmrm.flirt-hotlady.com/wdk2cxh" class="btn-chat" target="_blank">
+                        Написать 💬
+                    </a>
+                </div>
+
+                <div class="profile-item">
+                    <div class="profile-photo">
+                        <img src="images/girl5.jpg" alt="Анкета">
+                        <span class="online-indicator"></span>
+                    </div>
+                    <div class="profile-info">
+                        <h3 class="profile-name">Наталья, 42</h3>
+                        <p class="profile-location">📍 0.9 км от тебя</p>
+                        <p class="profile-status-text">Онлайн • Готова к встрече</p>
+                    </div>
+                    <a href="https://chmpmrm.flirt-hotlady.com/wdk2cxh" class="btn-chat" target="_blank">
+                        Написать 💬
+                    </a>
+                </div>
+            </div>
+
+            <div class="urgency-warning">
+                <div class="warning-icon">⚠️</div>
+                <div class="warning-text">
+                    <strong>Внимание!</strong> Анкеты доступны ограниченное время. Не упусти шанс!
+                </div>
+            </div>
+
+            <a href="https://chmpmrm.flirt-hotlady.com/wdk2cxh" class="btn-primary btn-large" target="_blank">
+                Посмотреть все анкеты
+                <span class="btn-arrow">→</span>
+            </a>
+
+            <div class="security-note">
+                🔒 Все данные защищены. Твоя конфиденциальность гарантирована
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
