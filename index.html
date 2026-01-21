@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>👉 Одинокие женщины рядом ждут! Интимные фото и личные приглашения 🔞</title>
+  <meta name="description" content="Одинокие дамы и замужние женщины сами пишут первыми 💋 Делятся интимными фото и приглашают на встречу. Бесплатный доступ — только для взрослых 18+." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --card: #fff7f0;
+      --muted: #666;
+      --text: #222;
+      --brand: #ff7700;
+      --brand-2: #ff9900;
+      --ring: rgba(255, 119, 0, .35);
+      --online: #28a745;
+    }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: Roboto, Arial, sans-serif; background: var(--bg); color: var(--text); }
+    a { color: inherit; text-decoration: none; }
+    .wrap { max-width: 960px; margin: 0 auto; padding: 0 15px; }
+    header { text-align:center; padding: 12px 0; border-bottom: 1px solid #eee; }
+    .logo { display:flex; align-items:center; justify-content:center; gap:8px; font-weight:700; font-size:20px; color: var(--brand); }
+    .logo-badge { width:30px; height:30px; border-radius:50%; background: var(--brand); display:flex; align-items:center; justify-content:center; color:#fff; font-weight:700; }
+
+    .header-actions { margin-top:10px; display:flex; justify-content:center; gap:8px; flex-wrap:wrap; }
+    .notif { position:relative; cursor:pointer; font-size:20px; }
+    .notif::after { content:''; position:absolute; top:0; right:0; width:12px; height:12px; border-radius:50%; background:red; border:2px solid #fff; animation: pulseBlink 1.5s infinite; }
+
+    @keyframes pulseBlink {
+      0% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.5); opacity: 0.4; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    .btn { border:0; cursor:pointer; padding:8px 14px; font-weight:500; border-radius:6px; font-size:14px; display:block; }
+    .btn-primary { background: var(--brand); color:#fff; }
+    .btn-secondary { background: #fff; border:1px solid #ddd; color: var(--text); }
+
+    .avatars { margin-top:15px; display:flex; justify-content:center; gap:15px; flex-wrap:wrap; }
+    .avatar-card { text-align:center; }
+    .avatar-card img { width:80px; height:80px; border-radius:50%; object-fit:cover; border:2px solid #eee; }
+    .avatar-card .meta { margin-top:4px; font-size:13px; }
+    .online-dot { width:8px; height:8px; background:var(--online); border-radius:50%; display:inline-block; margin-right:3px; }
+
+    .hero { padding: 20px 0; text-align:center; }
+    .hero h1 { font-size:24px; margin-bottom:10px; }
+    .hero p { margin-bottom:14px; color: var(--muted); font-size:15px; }
+
+    .status-box { background: #fff7f0; border:1px solid #f5d6c6; padding:8px 12px; border-radius:4px; display:inline-block; margin:10px auto; font-size:14px; color:#333; }
+    .status-box b { font-weight:700; }
+    .timer { margin-top:6px; font-size:14px; color:#000; }
+
+    .cta { margin-top: 14px; text-align:center; }
+    .cta .btn { width:100%; font-size:18px; padding:14px; margin-top:12px; }
+    .cta-sub { margin-top:8px; font-size:14px; color: var(--muted); }
+    .note { font-size:12px; color: var(--muted); margin-top:8px; text-align:center; }
+    .trust { font-size:12px; color: var(--muted); margin-top:4px; text-align:center; }
+
+    footer { margin-top:40px; padding:20px 0; font-size:12px; color:#888; text-align:center; border-top:1px solid #eee; }
+
+    .toast {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #333;
+      color: #fff;
+      padding: 12px 16px;
+      border-radius: 12px;
+      display: none;
+      max-width: 280px;
+      font-size: 15px;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+      opacity: 0;
+      transition: opacity 0.5s ease;
+      z-index: 9999;
+    }
+    .toast.show { display: block; opacity: 1; }
+
+    @media(max-width: 768px){
+      .avatar-card img { width:65px; height:65px; }
+      .hero h1 { font-size:20px; }
+      .hero p { font-size:14px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">
+        <div class="logo-badge">ОК</div>
+        Секретные Одноклассники
+      </div>
+      <div class="header-actions">
+        <div class="notif" id="notif">🔔</div>
+        <a href="https://susanina.top/click?o=21&a=2925" class="btn btn-secondary">Кто вас лайкнул?</a>
+        <a href="https://susanina.top/click?o=21&a=2925" class="btn btn-primary">Открыть сообщения</a>
+      </div>
+      <div class="avatars" id="avatars"></div>
+    </header>
+
+    <section class="hero">
+      <h1>🔥 Реальные женщины рядом: интимные анкеты и приватные фото</h1>
+      <p>📸 Реальные дамы загружают приватные фото и сами пишут первыми<br>
+      Бесплатный доступ — только для взрослых 18+. Женщины сами приглашают на встречу 💋<br>
+      Ты получаешь реальные сообщения и интимные фото от одиноких дам из твоего района.<br>
+      ⚡ Вход после бесплатной регистрации доступ за 30 секунд! Попробуй прямо сейчас!</p>
+
+      <div class="status-box" id="statusBox">
+        Сейчас онлайн: <b id="onlineCount">27</b> • Новых сообщений: <b id="msgCount">5</b>
+        <div class="timer">Доступ открыт: <span id="timer">05:40</span></div>
+      </div>
+
+      <div class="cta">
+        <a href="https://susanina.top/click?o=21&a=2925" class="btn btn-primary">👉 Посмотреть женщин онлайн рядом</a>
+        <div class="cta-sub">Покажем совпадения по вашему району за 30 секунд</div>
+        <a href="https://smikit.top/click?o=2&a=2925" class="btn btn-primary" style="margin-top:20px;">👉 Посмотреть фотоальбомы женщин</a>
+        <div class="cta-sub">Фото женщин из одноклассников 18+ с именами</div>
+
+        <a href="https://susanina.top/click?o=21&a=2925" class="btn btn-primary" style="margin-top:20px; display:flex; align-items:center; justify-content:center; gap:8px;">
+          <img src="https://img.icons8.com/color/20/whatsapp--v1.png" alt="WhatsApp" style="width:20px;height:20px;">
+          База WhatsApp номеров женщин
+        </a>
+
+        <div class="note">Нажимая, подтверждаете возраст 18+.</div>
+        <div class="trust">✔ Безопасный сервис · 🔒 Анонимно</div>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Секретные Одноклассники · Правила · Конфиденциальность
+    </footer>
+  </div>
+
+  <div class="toast" id="toast">У вас новое сообщение!</div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const avatarsWrap = document.getElementById('avatars');
+    const names = ['Марина','Света','Оля','Катя','Татьяна','Наталья','Галина','Елена'];
+    const imgs = [
+      'images/photo1.jpg',
+      'images/photo2.jpg',
+      'images/photo3.jpg',
+      'images/photo4.jpg',
+      'images/photo5.jpg',
+      'images/photo6.jpg',
+      'images/photo7.jpg',
+      'images/photo8.jpg'
+    ];
+    for(let i=0;i<names.length;i++){
+      const c=document.createElement('div');
+      c.className='avatar-card';
+      const link = 'https://susanina.top/click?o=21&a=2925';
+      let blurStyle = '';
+      if(i===1 || i===2){ blurStyle = 'style="filter: blur(2px);"'; }
+      c.innerHTML=`<a href="${link}"><img src="${imgs[i]}" alt="${names[i]}" ${blurStyle}/></a><div class="meta"><span class="online-dot"></span>${names[i]}</div>`;
+      avatarsWrap.appendChild(c);
+    }
+
+    // notifications
+    const toast = document.getElementById('toast');
+    const messages = [
+      "Марина (49) оставила вам фото 💌",
+      "Наталья (34): хочу встретиться сегодня 🌙",
+      "Елена (46) новые фото грудь 5 размер! 🔥",
+      "2 женщины написали вам сообщение 18+ 📩",
+      "Вам отправили фото, доступно 1 час ⏳",
+      "+3 новых лайка — проверьте прямо сейчас 💋"
+    ];
+
+    function showToast(msg) {
+      toast.textContent = msg;
+      toast.classList.add("show");
+      toast.onclick = () => {
+        window.location.href = "https://susanina.top/click?o=21&a=2925";
+      };
+
+      setTimeout(() => {
+        toast.classList.remove("show");
+      }, Math.floor(Math.random() * 2000) + 5000); // 5–7 секунд
+    }
+
+    function randomToast() {
+      const msg = messages[Math.floor(Math.random() * messages.length)];
+      showToast(msg);
+      const delay = Math.floor(Math.random() * 5000) + 15000; // каждые 15–20 секунд
+      setTimeout(randomToast, delay);
+    }
+
+    setTimeout(randomToast, 4000);
+
+    document.getElementById('notif').onclick=()=>{
+      window.location.href = 'https://susanina.top/click?o=21&a=2925';
+    };
+
+    // Таймер
+    function startTimer(duration, display) {
+      let timer = duration, minutes, seconds;
+      setInterval(function () {
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = minutes + ":" + seconds;
+
+        if (--timer < 0) {
+          timer = duration;
+        }
+      }, 1000);
+    }
+
+    window.onload = function () {
+      let fiveMinutes = 5 * 60 + 40,
+          display = document.getElementById('timer');
+      startTimer(fiveMinutes, display);
+    };
+  </script>
+</body>
+</html>
