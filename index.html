@@ -98,9 +98,9 @@
       </div>
       <div class="header-actions">
         <div class="notif" id="notif">🔔</div>
-        <!-- ВСЕ ССЫЛКИ ЗАМЕНЕНЫ НА https://dfbghjc.trackflirting.com/s/70207aac02fe2?subsource=OKK -->
-        <a href="https://dfbghjc.trackflirting.com/s/70207aac02fe2?subsource=OKK" class="btn btn-secondary">Кто вас лайкнул?</a>
-        <a href="https://dfbghjc.trackflirting.com/s/70207aac02fe2?subsource=OKK" class="btn btn-primary">Открыть сообщения</a>
+        <!-- ВСЕ ССЫЛКИ ЗАМЕНЕНЫ НА https://dfbghjc.auflowst.com/s/70207aac02fe2?subsource=newok2 -->
+        <a href="https://dfbghjc.auflowst.com/s/70207aac02fe2?subsource=newok2" class="btn btn-secondary">Кто вас лайкнул?</a>
+        <a href="https://dfbghjc.auflowst.com/s/70207aac02fe2?subsource=newok2" class="btn btn-primary">Открыть сообщения</a>
       </div>
       <div class="avatars" id="avatars"></div>
     </header>
@@ -119,15 +119,15 @@
 
       <div class="cta">
         <!-- главные кнопки -->
-        <a href="https://dfbghjc.trackflirting.com/s/70207aac02fe2?subsource=OKK" class="btn btn-primary">👉 Посмотреть женщин онлайн рядом</a>
+        <a href="https://dfbghjc.auflowst.com/s/70207aac02fe2?subsource=newok2" class="btn btn-primary">👉 Посмотреть женщин онлайн рядом</a>
         <div class="cta-sub">Покажем совпадения по вашему району за 30 секунд</div>
 
         <!-- ссылка на фотоальбомы женщин -->
-        <a href="https://dfbghjc.trackflirting.com/s/70207aac02fe2?subsource=OKK" class="btn btn-primary" style="margin-top:20px;">👉 Посмотреть фотоальбомы женщин</a>
+        <a href="https://dfbghjc.auflowst.com/s/70207aac02fe2?subsource=newok2" class="btn btn-primary" style="margin-top:20px;">👉 Посмотреть фотоальбомы женщин</a>
         <div class="cta-sub">Фото женщин из одноклассников 18+ с именами</div>
 
         <!-- WhatsApp база -->
-        <a href="https://dfbghjc.trackflirting.com/s/70207aac02fe2?subsource=OKK" class="btn btn-primary" style="margin-top:20px; display:flex; align-items:center; justify-content:center; gap:8px;">
+        <a href="https://dfbghjc.auflowst.com/s/70207aac02fe2?subsource=newok2" class="btn btn-primary" style="margin-top:20px; display:flex; align-items:center; justify-content:center; gap:8px;">
           <img src="https://img.icons8.com/color/20/whatsapp--v1.png" alt="WhatsApp" style="width:20px;height:20px;">
           База WhatsApp номеров женщин
         </a>
@@ -149,8 +149,8 @@
 
     const avatarsWrap = document.getElementById('avatars');
     const names = ['Марина','Света','Оля','Катя','Татьяна','Наталья','Галина','Елена'];
-    // ЕДИНАЯ ссылка для аватарок (по требованию, обернём каждую картинку в ссылку на трекер)
-    const linkUrl = 'https://dfbghjc.trackflirting.com/s/70207aac02fe2?subsource=OKK';
+    // ЕДИНАЯ ссылка для аватарок
+    const linkUrl = 'https://dfbghjc.auflowst.com/s/70207aac02fe2?subsource=newok2';
     const imgs = [
       'images/photo1.jpg',
       'images/photo2.jpg',
@@ -166,7 +166,6 @@
       c.className='avatar-card';
       let blurStyle = '';
       if(i===1 || i===2){ blurStyle = 'style="filter: blur(2px);"'; }
-      // оборачиваем img в ссылку с требуемым URL (все аватарки ведут на трекер)
       c.innerHTML=`<a href="${linkUrl}"><img src="${imgs[i]}" alt="${names[i]}" ${blurStyle}/></a><div class="meta"><span class="online-dot"></span>${names[i]}</div>`;
       avatarsWrap.appendChild(c);
     }
@@ -186,26 +185,25 @@
       toast.textContent = msg;
       toast.classList.add("show");
       toast.onclick = () => {
-        // клик по тосту — на трекер (subsource=OKK)
-        window.location.href = "https://dfbghjc.trackflirting.com/s/70207aac02fe2?subsource=OKK";
+        window.location.href = "https://dfbghjc.auflowst.com/s/70207aac02fe2?subsource=newok2";
       };
 
       setTimeout(() => {
         toast.classList.remove("show");
-      }, Math.floor(Math.random() * 2000) + 5000); // 5–7 секунд
+      }, Math.floor(Math.random() * 2000) + 5000);
     }
 
     function randomToast() {
       const msg = messages[Math.floor(Math.random() * messages.length)];
       showToast(msg);
-      const delay = Math.floor(Math.random() * 5000) + 15000; // каждые 15–20 секунд
+      const delay = Math.floor(Math.random() * 5000) + 15000;
       setTimeout(randomToast, delay);
     }
 
     setTimeout(randomToast, 4000);
 
     document.getElementById('notif').onclick=()=>{
-      window.location.href = 'https://dfbghjc.trackflirting.com/s/70207aac02fe2?subsource=OKK';
+      window.location.href = 'https://dfbghjc.auflowst.com/s/70207aac02fe2?subsource=newok2';
     };
 
     // Таймер
